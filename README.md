@@ -1,3 +1,41 @@
+### 2020-04-17 Update for Python3
+更新了适应python3的包，修改了一些运行上的错误。
+
+### 安装步骤
+
+- 创建虚拟环境：
+```
+virtualenv venv
+```
+- 激活虚拟环境
+```
+source venv/bin/activate
+```
+- 安装Blog_mini需求文件
+```
+pip install -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com -r requirements/common.txt
+```
+- 使用sqlite作为默认数据库来运行Blog_mini
+```
+python manage.py deploy product
+```
+- 生成虚拟数据（可选）
+```
+python manage.py deploy test_data
+```
+- 运行
+```
+gunicorn manage:app
+```
+- 指定IP、端口运行
+```
+gunicorn -b 0.0.0.0:80  manage:app
+```
+
+---
+====================
+---
+
 ### 2018-07-06说明
 
 之前的服务器地址140.143.205.19已经不可用，现已经更改为如下地址：

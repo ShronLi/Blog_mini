@@ -2,7 +2,7 @@
 import hashlib
 from datetime import datetime
 from werkzeug.security import generate_password_hash, check_password_hash
-from flask.ext.login import UserMixin
+from flask_login import UserMixin
 from . import db, login_manager
 
 article_types = {u'开发语言': ['Python', 'Java', 'JavaScript'],
@@ -296,6 +296,7 @@ class Comment(db.Model):
     def followed_name(self):
         if self.is_reply():
             return self.followed.first().followed.author_name
+
 
 class Article(db.Model):
     __tablename__ = 'articles'
