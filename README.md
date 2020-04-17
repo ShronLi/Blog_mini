@@ -3,9 +3,9 @@
 
 ### 安装步骤
 
-- 创建虚拟环境：
+- 创建python3虚拟环境：
 ```
-virtualenv venv
+virtualenv -p python3.x venv  
 ```
 - 激活虚拟环境
 ```
@@ -33,7 +33,38 @@ gunicorn -b 0.0.0.0:80  manage:app
 ```
 
 ---
-====================
+==
+---
+
+### 资料整合
+
+**0.功能详解文档**
+
+​    功能详解：[《开源分享：用Python开发的开源博客系统Blog_mini》](http://xpleaf.blog.51cto.com/9315560/1748913)
+
+
+
+**1.完整部署文档**
+
+​    在CentOS上部署Blog_mini：[《在CentOS上部署开源博客系统Blog_mini》](http://xpleaf.blog.51cto.com/9315560/1748629)
+
+​    在Ubuntu上部署Blog_mini：[《在Ubuntu上部署开源博客系统Blog_mini》](http://xpleaf.blog.51cto.com/9315560/1748707)
+
+
+
+**2.完整数据库安装文档**
+
+​    ***部署Blog_mini可以配置数据库，也可以完全不用配置数据库！**如果需要配置MySQL数据库，作者也撰写了详细完整的**MySQL安装**与**配置**以及**优化**的文档：
+
+​    在CentOS上源码安装MySQL：[《在CentOS上源码安装MySQL+安装问题解决+安全优化 》](http://xpleaf.blog.51cto.com/9315560/1748063)    
+
+​    在CentOS上yum安装MySQL：[《在CentOS上使用yum安装MySQL+安全优化》](http://xpleaf.blog.51cto.com/9315560/1748625)
+
+​    在Ubuntu上源码安装MySQL：[《在Ubuntu上源码安装MySQL+安装问题解决+安全优化》](http://xpleaf.blog.51cto.com/9315560/1748824)
+
+​    在Ubuntu上apt安装MySQL：[《在Ubuntu上使用apt-get安装MySQL+安全优化》](http://xpleaf.blog.51cto.com/9315560/1748704)
+
+====
 ---
 
 ### 2018-07-06说明
